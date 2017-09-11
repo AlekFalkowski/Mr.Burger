@@ -1,0 +1,63 @@
+.page-4__container
+	width: 50%
+	background-color: rgba(47,50,52,0.93)
+
+.team__content
+	width: 470px
+	flex-direction: column
+	padding-left: 80px
+
+.team__title
+	flex-basis: 35vh
+	flex-shrink: 0
+	min-height: 120px
+	padding-bottom: 5vh
+	align-items: flex-end
+	@include gagalin(72px, #f9b43b)
+
+.team__list
+	flex-direction: column
+	flex-shrink: 0
+
+.team__member
+	flex-direction: column
+
+.member__name
+	align-self: flex-start
+	align-items: center
+	margin-top: 35px
+	@include gagalin(14px, #fff)
+	&::before
+		width: 9px
+		height: 6px
+		content: ""
+		background: url(../img/icons/trigon-down.svg) center center no-repeat
+		margin-right: 10px
+	&:hover
+		color: #f9b43b
+		&::before
+			transform: rotate(180deg)
+		&+.member__about
+			height: 100%
+
+.member__about
+	height: 0
+	overflow: hidden
+	align-items: center
+
+.member__avatar
+	width: 100px
+	height: 100px
+	border-radius: 50%
+	margin: 15px 20px 0 15px
+	flex-shrink: 0
+	overflow: hidden
+	justify-content: center
+	align-items: center
+	background-color: #fff
+
+.member__text
+	flex-direction: column
+	@include ubuntu(14px, #fff, 300)
+	h3
+		font-weight: 900

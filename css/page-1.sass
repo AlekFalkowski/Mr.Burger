@@ -1,0 +1,63 @@
+.page-1__container
+	width: 940px
+	flex-direction: column
+	justify-content: space-between
+
+.header
+	margin: 12px 0
+	z-index: 10
+	justify-content: flex-end
+	align-items: center
+
+.logo
+	margin-right: auto
+
+.nav
+	&__div
+		align-items: center
+		&::after
+			width: 4px
+			height: 4px
+			border-radius: 50%
+			background-color: #fff
+			content: ""
+		&:last-child::after
+			display: none
+	&__btn
+		margin: 0 16px
+		@include ubuntu(13px, #fff, 700)
+
+.order
+	display: inline-flex
+	padding: 13px 16px
+	border-radius: 5px
+	justify-content: center
+	align-items: center
+	background-color: #e45028
+	@include ubuntu(13px, #fff, 700)
+	&:hover
+		background-color: #c1401e
+
+.welcome
+	justify-content: center
+	align-items: center
+
+.welcome__img
+	width: 50%
+	justify-content: center
+	align-items: center
+	img
+		width: 100%
+
+.welcome__text
+	width: 50%
+	flex-direction: column
+	padding-left: 10px
+	@include lifehack(65px, #fff)
+	h1
+		@include gagalin(72px, #f9b43b)
+
+.arrow-down
+	margin: 40px
+	align-self: center
+	z-index: 10

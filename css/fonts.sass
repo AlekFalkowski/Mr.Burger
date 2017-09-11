@@ -1,0 +1,51 @@
+@font-face
+	font-family: gagalin
+	src: url(../fonts/gagalin-regular.woff) format('woff')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: lifehack
+	src: url(../fonts/lifehack-medium.woff) format('woff')
+	font-weight: normal
+	font-style: normal
+
+@font-face
+	font-family: ubuntu
+	src: url(../fonts/ubuntu-light.woff) format('woff')
+	font-weight: 300
+	font-style: normal
+
+@font-face
+	font-family: ubuntu
+	src: url(../fonts/ubuntu-regular.woff) format('woff')
+	font-weight: 500
+	font-style: normal
+
+@font-face
+	font-family: ubuntu
+	src: url(../fonts/ubuntu-medium.woff) format('woff')
+	font-weight: 700
+	font-style: normal
+
+@font-face
+	font-family: ubuntu
+	src: url(../fonts/ubuntu-bold.woff) format('woff')
+	font-weight: 900
+	font-style: normal
+
+@mixin gagalin($size, $color)
+	font-family: gagalin
+	font-size: $size
+	color: $color
+
+@mixin lifehack($size, $color)
+	font-family: lifehack
+	font-size: $size
+	color: $color
+
+@mixin ubuntu($size, $color, $style)
+	font-family: ubuntu
+	font-size: $size
+	color: $color
+	font-weight: $style

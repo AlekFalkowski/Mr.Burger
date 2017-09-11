@@ -1,0 +1,43 @@
+.menu__title
+	flex-basis: 25%
+	padding: 25vh 5vw 0 0
+	justify-content: flex-end
+	@include gagalin(72px, #fff)
+
+.menu__list
+	display: flex
+	flex-basis: 75%
+	justify-content: flex-end
+
+.menu__banner
+	display: flex
+	width: 5vw
+	min-width: 80px
+	padding-bottom: 5vh
+	justify-content: center
+	div
+		writing-mode: vertical-rl
+		transform: rotate(180deg)
+		@include gagalin(40px, #fff)
+		max-width: 1em//для Firefox
+	&:hover div
+		color: #f9b43b
+	&:hover+.menu__text
+		width: 50vw
+		min-width: 540px
+		padding: 5vh 5vw
+	&-1
+		background: url(../img/bg/bg-5-1.jpg) center center no-repeat
+		background-size: cover
+	&-2
+		background: url(../img/bg/bg-5-2.jpg) center center no-repeat
+		background-size: cover
+	&-3
+		background: url(../img/bg/bg-5-3.jpg) center center no-repeat
+		background-size: cover
+
+.menu__text
+	width: 0px
+	overflow: hidden
+	background: rgba(47,50,52,0.93)
+	@include ubuntu(14px, #fff, 300)

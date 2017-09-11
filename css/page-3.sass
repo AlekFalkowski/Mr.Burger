@@ -1,0 +1,102 @@
+.page-3__container
+	width: 940px
+	align-items: center
+	overflow: hidden //иначе гармошка растягивает section
+
+.arrow-left, .arrow-right
+	align-self: center
+	margin: 16px
+
+.burgers__content
+	position: relative
+	left: 0px
+
+.burgers__item
+	position: relative
+	width: 940px
+	height: 500px
+	flex-direction: row
+	justify-content: center
+	align-items: center
+
+.burgers__img
+	width: 50%
+	justify-content: center
+	align-items: center
+	img
+		width: 100%
+
+.burgers__text
+	flex-direction: column
+	width: 50%
+	text-align: left //есть ли необходимость?
+	@include ubuntu(14px, #fff, 300)
+	h1
+		@include gagalin(72px, #fff)
+
+.burgers__price
+	align-items: baseline
+	&-value
+		@include gagalin(72px, #e35028)
+	&-units
+		@include gagalin(30px, #e35028)
+		margin-right: auto
+
+.structure
+	position: absolute
+	left: 0
+	top: 0
+	&__btn
+		width: 90px
+		height: 90px
+		border-radius: 5px
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background-color: rgba(227,80,40,0.4)
+		span
+			@include gagalin(14px, #fff)
+		&:hover
+			background-color: rgba(227,80,40,1)
+		&:hover+.structure__list
+			display: table
+	&__list
+		display: none
+		position: absolute
+		left: 90px
+		top: 0
+		border-radius: 5px
+		background-color: rgba(255,255,255,0.9)
+		padding: 7px 10px 7px 0
+		border-spacing: 10px 3px
+		tr
+			height: 50px
+			vertical-align: middle
+		td:first-child
+			min-width: 70px
+			text-align: center
+		td:nth-child(2)
+			min-width: 100px
+			@include ubuntu(14px, #2f3234, 700)
+		td:last-child
+			min-width: 50px
+			text-align: right
+			@include ubuntu(14px, #2f3234, 300)
+
+.burgers__energy
+	position: absolute
+	left: 0
+	bottom: 0
+	flex-direction: column
+	opacity: 0.5
+	&-value
+		position: absolute
+		top: 27px
+		width: 100%
+		text-align: center
+		@include gagalin(20px, #fff)
+	&-units
+		@include gagalin(14px, #fff)
+		text-align: center
+
+
