@@ -22,7 +22,7 @@ btn-f { display: flex; cursor: pointer; }
 
 h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: inherit; }
 
-.page { min-width: 1040px; height: 100%; min-height: 500px; overflow: hidden; }
+.page { min-width: 1040px; height: 100vh; min-height: 500px; overflow: hidden; }
 
 .page-1 { background: url(../img/bg/bg-1.jpg) center center no-repeat; background-size: cover; justify-content: center; }
 
