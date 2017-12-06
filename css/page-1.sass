@@ -1,5 +1,5 @@
 .page-1__container
-	width: 940px
+	width: 94%
 	flex-direction: column
 	justify-content: space-between
 
@@ -11,6 +11,7 @@
 
 .logo
 	margin-right: auto
+	//рассмотреть возможность применения vmin или vmax для размеров картинки логотипа
 
 .nav
 	&__div
@@ -41,6 +42,10 @@
 .welcome
 	justify-content: center
 	align-items: center
+
+@media screen and (orientation: portrait)
+	.welcome
+		flex-direction: column
 
 .welcome__img
 	width: 50%
