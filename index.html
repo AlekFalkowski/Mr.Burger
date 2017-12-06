@@ -3,7 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<!--width=device-width отвечает за то, чтобы ширина видимой области веб-страницы равнялась CSS ширине устройству (device-width). Данная ширина (CSS) - это не физическое разрешение экрана. Это некоторая величина независящая от разрешения экрана. Она предназначена для того, чтобы мобильный адаптивный дизайн сайта отображался на всех устройствах одинаково независимо от их плотности пикселей экрана.-->
+	<!--initial-scale - устанавливает первоначальный масштаб веб-страницы. Значение 1 означает то, что масштаб равен 100%.-->
+	<!--user-scalable - указывает, может ли пользователь управлять масштабом или нет.-->
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Mr.Burger</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -36,9 +39,7 @@
 						<btn-f class="nav__btn">КОНТАКТЫ</btn-f>
 					</div>
 				</nav>
-				<btn-f class="order">
-					ЗАКАЗАТЬ
-				</btn-f>
+				<btn-f class="order">ЗАКАЗАТЬ</btn-f>
 			</header>
 			<section class="welcome">
 				<div class="welcome__img">
