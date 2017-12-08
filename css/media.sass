@@ -1,17 +1,22 @@
-@function rem($px)
+@mixin portrait
+	@media screen and (orientation: portrait)
+		@content
+
+
+//@function rem($px)
 	@return $px / 16 + 0rem//параметры автозамены: \d*px rem($0)
 
-$desctop: 1200px
-$laptop: 992px
-$tablets: 768px
-$phones: 480px
+//$desctop: 1200px
+//$laptop: 992px
+//$tablets: 768px
+//$phones: 480px
 
 
-@mixin tablets
+//@mixin tablets
 	@media screen and (max-width: 786px)
 	@content
 
-@mixin phones
+//@mixin phones
 	@media screen and (max-width: 480px)
 	@content
 

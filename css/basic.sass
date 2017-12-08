@@ -14,9 +14,13 @@ body
 
 div, section, article, header, aside, nav, main, form, footer
 	display: flex
+	flex-shrink: 0
 
 btn-f
 	display: flex
+	flex-shrink: 0
+	min-height: 45px
+	min-width: 45px
 	cursor: pointer
 
 h1, h2, h3, h4, h5, h6, p
@@ -38,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p
 	background: url(../img/bg/bg-1.jpg) center center no-repeat
 	background-size: cover
 	justify-content: center
+	align-items: center
 
 .page-2
 	background: url(../img/bg/bg-2.jpg) center center no-repeat
@@ -62,3 +67,4 @@ h1, h2, h3, h4, h5, h6, p
 .page-7
 	background: url(../img/bg/bg-7.jpg) center center no-repeat
 	background-size: cover
+	justify-content: center

@@ -1,19 +1,27 @@
 .page-1__container
-	width: 94%
+	width: 96%
+	max-width: 940px
+	height: 96%
 	flex-direction: column
 	justify-content: space-between
 
 .header
-	margin: 12px 0
+	height: 15%
 	z-index: 10
-	//justify-content: flex-end
+	justify-content: flex-end
 	align-items: center
+	background-color: rgba(200,200,200,0.3)
 
 .logo
+	height: 100%
 	margin-right: auto
-	//рассмотреть возможность применения vmin или vmax для размеров картинки логотипа
+	background-color: rgba(200,200,200,0.3)
+	img
+		max-height: 100%
 
 .nav
+	@media (max-width: 800px)
+		display: none
 	&__div
 		align-items: center
 		&::after
@@ -25,26 +33,39 @@
 		&:last-child::after
 			display: none
 	&__btn
-		margin: 0 16px
+		justify-content: center
+		align-items: center
+		padding: 0 16px
 		@include ubuntu(13px, #fff, 700)
+		&:hover
+			background-color: rgba(200,200,200,0.5)
 
 .order
-	//display: inline-flex
-	padding: 13px 16px
 	border-radius: 5px
 	justify-content: center
 	align-items: center
+	padding: 0 16px
+	margin-left: 4px
 	background-color: #e45028
 	@include ubuntu(13px, #fff, 700)
 	&:hover
 		background-color: #c1401e
 
-.welcome
+.drop-down-menu__btn
 	justify-content: center
 	align-items: center
+	margin-left: 12px
+	@media (min-width: 801px)
+		display: none
+	&:hover
+		background-color: rgba(200,200,200,0.5)
 
-@media screen and (orientation: portrait)
-	.welcome
+.welcome
+	height: 71%
+	justify-content: center
+	align-items: center
+	background-color: rgba(200,200,200,0.3)
+	@media (orientation: portrait)
 		flex-direction: column
 
 .welcome__img
@@ -62,7 +83,15 @@
 	h1
 		@include gagalin(72px, #f9b43b)
 
-.arrow-down
-	margin: 40px
+.page-1__footer
+	height: 10%
+	justify-content: center
 	align-self: center
 	z-index: 10
+	background-color: rgba(200,200,200,0.3)
+
+.arrow-down
+	justify-content: center
+	align-self: center
+	background-color: rgba(200,200,200,0.3)
+
