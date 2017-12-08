@@ -41,9 +41,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: inherit; }
 
 .header { height: 15%; z-index: 10; justify-content: flex-end; align-items: center; background-color: rgba(200, 200, 200, 0.3); }
 
-.logo { height: 100%; margin-right: auto; background-color: rgba(200, 200, 200, 0.3); }
+.logo { height: 100%; margin-right: auto; justify-content: center; align-items: center; background-color: rgba(200, 200, 200, 0.3); }
 
-.logo img { max-height: 100%; }
+.logo img { max-width: 100%; max-height: 100%; }
 
 @media (max-width: 800px) { .nav { display: none; } }
 
@@ -67,31 +67,39 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; font-weight: inherit; }
 
 .dd-nav__start-btn:hover + .dd-nav__list { display: flex; }
 
-.dd-nav__list { position: fixed; top: 0; right: 0; bottom: 0; background-color: rgba(47, 50, 52, 0.99); flex-direction: column; display: none; }
+.dd-nav__list { position: fixed; top: 0; right: 0; bottom: 0; background-color: rgba(47, 50, 52, 0.99); flex-direction: column; display: none; padding-right: 50px; }
 
 .dd-nav__div { flex-direction: column; }
 
 .dd-nav__div::after { width: 4px; height: 4px; border-radius: 50%; background-color: #fff; content: ""; align-self: center; }
 
-.dd-nav__div:first-child::after, .dd-nav__div:last-child::after { display: none; }
+.dd-nav__div:last-child::after { display: none; }
 
 .dd-nav__btn { padding: 0 16px; font-family: ubuntu; font-size: 13px; color: #fff; font-weight: 700; }
 
 .dd-nav__btn:hover { background-color: rgba(200, 200, 200, 0.5); }
 
-.dd-nav__close-btn { align-self: flex-end; }
+.dd-nav__close-btn { position: absolute; top: 0; right: 0; padding: 0; }
 
-.welcome { height: 71%; justify-content: center; align-items: center; background-color: rgba(200, 200, 200, 0.3); }
+.welcome { height: 71%; background-color: rgba(200, 200, 200, 0.3); }
 
 @media (orientation: portrait) { .welcome { flex-direction: column; } }
 
-.welcome__img { width: 50%; justify-content: center; align-items: center; }
+.welcome__img { width: 50%; height: 100%; justify-content: center; align-items: center; }
 
-.welcome__img img { width: 100%; }
+@media (orientation: portrait) { .welcome__img { width: 100%; height: 50%; } }
 
-.welcome__text { width: 50%; flex-direction: column; padding-left: 10px; font-family: lifehack; font-size: 65px; color: #fff; }
+.welcome__img img { max-width: 100%; max-height: 100%; }
+
+.welcome__text { width: 50%; height: 100%; flex-direction: column; justify-content: center; font-family: lifehack; font-size: 65px; color: #fff; }
+
+@media (orientation: portrait) { .welcome__text { width: 100%; height: 50%; align-items: center; text-align: center; } }
+
+@media (max-width: 800px) { .welcome__text { font-family: lifehack; font-size: 48px; color: #fff; } }
 
 .welcome__text h1 { font-family: gagalin; font-size: 72px; color: #f9b43b; }
+
+@media (max-width: 800px) { .welcome__text h1 { font-family: gagalin; font-size: 54px; color: #f9b43b; } }
 
 .page-1__footer { height: 10%; justify-content: center; align-self: center; z-index: 10; background-color: rgba(200, 200, 200, 0.3); }
 
