@@ -90,13 +90,13 @@ img { background-color: rgba(200, 200, 200, 0.3); max-width: 100%; max-height: 1
 
 @media screen and (orientation: landscape) { .welcome__img { width: 50%; height: 100%; } }
 
-.welcome__text { background-color: rgba(200, 200, 200, 0.3); width: 100%; height: 50%; flex-direction: column; justify-content: center; text-align: center; font-family: lifehack; font-size: 8.125vw; color: #fff; }
+.welcome__text { background-color: rgba(200, 200, 200, 0.3); width: 100%; height: 50%; flex-direction: column; justify-content: center; text-align: center; font-family: lifehack; font-size: 8.125vmax; color: #fff; }
 
 @media screen and (orientation: landscape) { .welcome__text { width: 50%; height: 100%; text-align: left; } }
 
 @media screen and (min-width: 801px) { .welcome__text { font-family: lifehack; font-size: 65px; color: #fff; } }
 
-.welcome__text h1 { background-color: rgba(200, 200, 200, 0.3); font-family: gagalin; font-size: 9vw; color: #f9b43b; }
+.welcome__text h1 { background-color: rgba(200, 200, 200, 0.3); font-family: gagalin; font-size: 9vmax; color: #f9b43b; }
 
 @media screen and (min-width: 801px) { .welcome__text h1 { font-family: gagalin; font-size: 72px; color: #f9b43b; } }
 
@@ -106,7 +106,7 @@ img { background-color: rgba(200, 200, 200, 0.3); max-width: 100%; max-height: 1
 
 .page-2__container { background-color: rgba(200, 200, 200, 0.6); width: 94%; max-width: 940px; height: 96%; flex-direction: column; justify-content: space-evenly; }
 
-.page-2__container h1 { text-align: center; font-family: gagalin; font-size: 9vw; color: #2f3234; }
+.page-2__container h1 { text-align: center; font-family: gagalin; font-size: 9vmax; color: #2f3234; }
 
 @media screen and (min-width: 801px) { .page-2__container h1 { font-family: gagalin; font-size: 72px; color: #2f3234; } }
 
@@ -122,9 +122,9 @@ img { background-color: rgba(200, 200, 200, 0.3); max-width: 100%; max-height: 1
 
 @media screen and (orientation: landscape) { .about__img { width: 100px; } }
 
-.about__text { width: 70%; flex-direction: column; text-align: left; font-family: ubuntu; font-size: 1.75vw; color: #2f3234; font-weight: 300; }
+.about__text { width: 70%; flex-direction: column; text-align: left; font-family: ubuntu; font-size: 1.75vmax; color: #2f3234; font-weight: 300; }
 
-.about__text h3 { font-family: lifehack; font-size: 3vw; color: #2f3234; }
+.about__text h3 { font-family: lifehack; font-size: 3vmax; color: #2f3234; }
 
 @media screen and (orientation: landscape) { .about__text { width: 100%; text-align: center; } }
 
