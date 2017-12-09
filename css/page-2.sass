@@ -4,30 +4,31 @@
 	max-width: 940px
 	height: 96%
 	flex-direction: column
-	justify-content: center
-	//align-items: center
+	justify-content: space-evenly
 	h1
-		margin-bottom: 85px
 		text-align: center
-		@include gagalin(54px, #2f3234)
+		@include gagalin(7vw, #2f3234)
 		@include desktop
 			@include gagalin(72px, #2f3234)
 
 .about__list
 	flex-direction: column
-	justify-content: center
+	justify-content: space-between
 	@include horizontal
 		flex-direction: row
 
 .about__item
-	//flex-basis: 50%
+	justify-content: space-between
 	align-items: center
+	margin-top: 5%
 	@include horizontal
 		flex-direction: column
-		width: 33.33%
+		justify-content: flex-start
+		width: 32%
+		margin-top: 0
 
 .about__img
-	width: 30%
+	width: 28%
 	height: 100px
 	justify-content: center
 	align-items: center
@@ -38,9 +39,13 @@
 	width: 70%
 	flex-direction: column
 	text-align: left
-	@include ubuntu(14px, #2f3234, 300)
+	@include ubuntu(2vw, #2f3234, 300)
 	h3
-		@include lifehack(24px, #2f3234)
+		@include lifehack(3vw, #2f3234)
 	@include horizontal
 		width: 100%
 		text-align: center
+	@include desktop
+		@include ubuntu(14px, #2f3234, 300)
+		h3
+			@include lifehack(24px, #2f3234)
