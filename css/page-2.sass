@@ -1,31 +1,46 @@
 .page-2__container
+	background-color: rgba(200,200,200,0.6)
 	width: 94%
 	max-width: 940px
+	height: 96%
 	flex-direction: column
 	justify-content: center
-	align-items: center
+	//align-items: center
 	h1
 		margin-bottom: 85px
-		@include gagalin(72px, #2f3234)
+		text-align: center
+		@include gagalin(54px, #2f3234)
+		@include desktop
+			@include gagalin(72px, #2f3234)
 
 .about__list
-	justify-content: space-between
+	flex-direction: column
+	justify-content: center
+	@include horizontal
+		flex-direction: row
 
 .about__item
-	flex-basis: 50%
-	flex-direction: column
+	//flex-basis: 50%
 	align-items: center
+	@include horizontal
+		flex-direction: column
+		width: 33.33%
 
 .about__img
-	width: 100px
+	width: 30%
 	height: 100px
 	justify-content: center
 	align-items: center
-	overflow: hidden
+	@include horizontal
+		width: 100px
 
 .about__text
+	width: 70%
 	flex-direction: column
-	text-align: center
+	text-align: left
 	@include ubuntu(14px, #2f3234, 300)
 	h3
 		@include lifehack(24px, #2f3234)
+	@include horizontal
+		width: 100%
+		text-align: center
