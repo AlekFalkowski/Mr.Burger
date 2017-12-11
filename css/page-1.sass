@@ -1,7 +1,7 @@
 .page-1__container
 	background-color: rgba(200,200,200,0.3)
 	width: 94%
-	max-width: 940px
+	max-width: $max-w
 	height: 96%
 	flex-direction: column
 	justify-content: space-between
@@ -111,17 +111,17 @@
 	flex-direction: column
 	justify-content: center
 	text-align: center
-	@include lifehack(8.125vmax, #fff)
+	@include lifehack(6.91vmax, #fff) //8.125
 	@include horizontal
 		width: 50%
 		height: 100%
 		text-align: left
-	@include desktop
+	@include max-w
 		@include lifehack(65px, #fff)
 	h1
 		background-color: rgba(200,200,200,0.3)
-		@include gagalin(9vmax, #f9b43b)
-		@include desktop
+		@include gagalin(7.66vmax, #f9b43b) //9
+		@include max-w
 			@include gagalin(72px, #f9b43b)
 
 .page-1__footer

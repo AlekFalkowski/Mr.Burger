@@ -7,8 +7,8 @@
 	justify-content: space-evenly
 	h1
 		text-align: center
-		@include gagalin(9vmax, #2f3234)
-		@include desktop
+		@include gagalin(7.66vmax, #2f3234) //9
+		@include max-w
 			@include gagalin(72px, #2f3234)
 
 .about__list
@@ -39,13 +39,13 @@
 	width: 70%
 	flex-direction: column
 	text-align: left
-	@include ubuntu(1.75vmax, #2f3234, 300)
+	@include ubuntu(1.49vmax, #2f3234, 300) //1.75
 	h3
-		@include lifehack(3vmax, #2f3234)
+		@include lifehack(2.55vmax, #2f3234) //3
 	@include horizontal
 		width: 100%
 		text-align: center
-	@include desktop
+	@include max-w
 		@include ubuntu(14px, #2f3234, 300)
 		h3
 			@include lifehack(24px, #2f3234)

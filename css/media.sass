@@ -6,5 +6,11 @@
 	@media screen and (min-width: 801px)
 		@content
 
+$max-w: 940px
+
+@mixin max-w
+	@media screen and (min-width: $max-w)
+		@content
+
 //@function rem($px)
 //@return $px / 16 + 0rem//параметры автозамены: \d*px rem($0)
